@@ -1,0 +1,146 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>test</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <style type="text/css" media="screen">
+          body {
+            font-family: "KaiTi", "STKaiti";
+            font-size: 18px;
+          }
+
+          h2.background {
+            position: relative;
+            z-index: 1;
+
+              &:before {
+                border-top: 2px solid #dfdfdf;
+                content:"";
+                margin: 0 auto; /* this centers the line to the full width specified */
+                position: absolute; /* positioning must be absolute here, and relative positioning must be applied to the parent */
+                top: 50%; left: 0; right: 0; bottom: 0;
+                width: 95%;
+                z-index: -1;
+              }
+
+              span { 
+                /* to hide the lines from behind the text, you have to set the background color the same as the container */ 
+                background: #fff; 
+                padding: 0 15px; 
+              }
+          }
+        </style>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div style="border-width: 1px; border-style: solid; width: 640px; height: 430px">
+          <div style="background: darkblue; color: white; text-align: center; height: 22px;">
+            灯信息
+          </div>
+          <div style="position: absolute; margin-top: 5px; left: 30px; background-color: white;">
+            当前投影灯
+          </div>
+          <div style="padding: 15px 10px 10px 10px;">
+            <div style="border-width: 1px; border-style: solid; width: 620px; padding-bottom: 10px;">
+
+              <div style="display: inline-block;">
+
+                <div style="position: absolute; margin-top: 22px; left: 30px; background-color: white;">
+                  投影灯名称
+                </div>
+                <div style="border-width: 1px; border-style: solid; width: 400px;
+                  margin: 30px 5px 5px 5px;">
+                  <input type="text" value="OSRAM(R) XB0 4000W/DHP CL OFR" style="margin: 15px 5px; width: 378px; 
+                  padding: 5px; border-width: 1px; border-style: solid; font-size: 14px;"/>
+                </div>
+
+                <div style="position: relative;">
+                  <div style="position: absolute; margin-top: -12px; left: 10px; background-color:
+                    white; padding: 2px;">
+                    灯信息
+                  </div>
+
+                  <div style="border-width: 1px; border-style: solid; width: 400px; 
+                    margin: 30px 5px 5px 5px;">
+                    <div style="margin-top: 20px; padding: 0px 15px 15px; display: inline-block;">
+                      <div style="text-align: right; width: 200px; display: inline-block;
+                        margin-right: 5px;">
+                        运行时间（小时）
+                      </div>
+                      <div style="width: 120px; display: inline-block;">
+                        <input type="text" value="181" style="width: 80px; 
+                        padding: 5px; border-width: 1px; border-style: solid;"/>
+                      </div>
+                    </div>
+
+                    <div style="padding: 0px 15px 15px; display: inline-block;">
+                      <div style="text-align: right; width: 200px; display: inline-block;
+                        margin-right: 5px;">
+                        剩余时间（小时）
+                      </div>
+                      <div style="width: 120px; display: inline-block;">
+                        <input type="text" value="919" style="width: 80px; 
+                        padding: 5px; border-width: 1px; border-style: solid;"/>
+                      </div>
+                    </div>
+
+                    <div style="padding: 0px 15px 15px; display: inline-block;">
+                      <div style="text-align: right; width: 200px; display: inline-block;
+                        margin-right: 5px;">
+                        点灯次数
+                      </div>
+                      <div style="width: 120px; display: inline-block;">
+                        <input type="text" value="24" style="width: 80px; 
+                        padding: 5px; border-width: 1px; border-style: solid;"/>
+                      </div>
+                    </div>
+
+                    <div style="padding: 0px 15px 15px; display: inline-block;">
+                      <div style="text-align: right; width: 200px; display: inline-block;
+                        margin-right: 5px;">
+                        订货号
+                      </div>
+                      <div style="width: 120px; display: inline-block;">
+                        <input type="text" value="R9855976" style="width: 80px; 
+                        padding: 5px; border-width: 1px; border-style: solid;"/>
+                      </div>
+                    </div>
+
+                    <div style="padding: 0px 15px 15px; display: inline-block;">
+                      <div style="text-align: right; width: 200px; display: inline-block;
+                        margin-right: 5px;">
+                        序列号
+                      </div>
+                      <div style="width: 120px; display: inline-block;">
+                        <input type="text" value="exeyh" style="width: 80px; 
+                        padding: 5px; border-width: 1px; border-style: solid;"/>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+
+              <div style="display: inline-block;">
+                <input type="button" style="font-size: 32px; width: 90px; margin-left: 55px; position: absolute; top: 200px;"
+                value="更换投影灯" />
+              </div>
+
+          </div>
+
+          <div style="width: 100%; text-align: center; margin-top: 10px;">
+            <input style="font-size: 32px; width: 60px;" type="button" value="关闭" />
+          </div>
+        </div>
+
+    </body>
+</html>
